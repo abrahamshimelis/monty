@@ -1,26 +1,26 @@
 #include "monty.h"
 
 /**
- * get_opcode_func - check opcode and returns the correct function
+ * get_op_func -  checks opcode and returns the correct function
  * @str: the opcode
- * 
- * Return: an opcode function, or NULL on failure
-*/
-
-instruction_func get_opcode_func(char *str)
+ *
+ * Return: returns a function, or NULL on failure
+ */
+instruct_func get_opcode_func(char *str)
 {
-    int i;
+	int i;
 
-    instruction_t instruct[] = {
-        {"push", _push},
-        {"pall", _pall},
-    };
+	instruction_t instructions[] = {
+		{"push", _push},
+		{"pall", _pall},
+		{NULL, NULL},
+	};
 
-    i = 0;
-    while (instruct[i].f != NULL && strcmp(instruct[i].opcode, str) != 0)
-    {
-        i++;
-    }
+	i = 0;
+	while (instructions[i].f != NULL && strcmp(instructions[i].opcode, str) != 0)
+	{
+		i++;
+	}
 
-    return (instruct[i].f);
+	return (instructions[i].f);
 }
