@@ -6,6 +6,7 @@
  *
  * Return: returns a function, or NULL on failure
  */
+
 instruct_func get_opcode_func(char *str)
 {
 	int i;

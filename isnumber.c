@@ -6,6 +6,7 @@
  *
  * Return: returns 1 if string is a number, 0 otherwise
  */
+
 int isnumber(char *str)
 {
 	unsigned int i;

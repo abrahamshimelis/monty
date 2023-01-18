@@ -6,6 +6,7 @@
  *
  * Return: returns the opcode or null on failure
  */
+
 char *parse_line(char *line)
 {
 	char *op_code;

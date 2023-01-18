@@ -6,6 +6,7 @@
  * @n: data inside node
  * Return: pointer to first node
  */
+
 stack_t *add_dnodeint_end(stack_t **head, const int n)
 {
 	stack_t *tmp = *head;

@@ -6,6 +6,7 @@
  * @index: position to delete
  * Return: 1 if successful, -1 if failure
  */
+
 int delete_dnodeint_at_index(stack_t **head, unsigned int index)
 {
 	stack_t *tmp;

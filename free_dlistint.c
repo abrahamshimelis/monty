@@ -5,6 +5,7 @@
  * @head: pointer to first node
  *
  */
+
 void free_dlistint(stack_t *head)
 {
 	stack_t *tmp;
