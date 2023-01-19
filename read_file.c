@@ -24,12 +24,11 @@ void read_file(char *filename, stack_t **stack)
 	while ((read = getline(&buffer, &i, file)) != -1)
 	{
 		line = parse_line(buffer);
-		if (line == NULL || line[0] == '#')
+		if (line == NULL)
 		{
 			line_count++;
 			continue;
 		}
-		
 		s = get_opcode_func(line);
 		if (s == NULL)
 		{
