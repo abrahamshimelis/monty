@@ -30,7 +30,5 @@ void _push(stack_t **stack, unsigned int line_number)
 		printf("L%d: usage: push integer\n", line_number);
 		error_exit(stack);
 	}
-	
 		add_dnodeint(stack, push_arg);
-	
 }
