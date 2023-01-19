@@ -17,6 +17,7 @@ instruct_func get_opcode_func(char *str)
 		{"pint", _pint},
 		{"pop", _pop},
 		{"swap", _swap},
+		{"add", _add},
 		{NULL, NULL},
 	};
 
