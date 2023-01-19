@@ -20,7 +20,7 @@ void _push(stack_t **stack, unsigned int line_number)
 		error_exit(stack);
 	}
 
-	arg = strtok(NULL, "\n ");
+	arg = strtok(NULL, "\n");
 	if (isnumber(arg) == 1 && arg != NULL)
 	{
 		push_arg = atoi(arg);
@@ -30,15 +30,7 @@ void _push(stack_t **stack, unsigned int line_number)
 		printf("L%d: usage: push integer\n", line_number);
 		error_exit(stack);
 	}
-
-	if (sq_flag == 1)
-	{
-		add_dnodeint_end(stack, push_arg);
-	}
-
-	if (sq_flag == 0)
-	{
+	
 		add_dnodeint(stack, push_arg);
-	}
-
+	
 }
