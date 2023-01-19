@@ -14,6 +14,7 @@ instruct_func get_opcode_func(char *str)
 	instruction_t instructions[] = {
 		{"push", _push},
 		{"pall", _pall},
+		{"pint", _pint},
 		{NULL, NULL},
 	};
 

@@ -46,6 +46,7 @@ instruct_func get_opcode_func(char *str);
 void read_file(char *filename, stack_t **stack);
 void _pall(stack_t **stack, unsigned int line_number);
 void _push(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
 stack_t *add_dnodeint(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
 void error_exit(stack_t **stack);
