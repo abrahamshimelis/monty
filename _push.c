@@ -20,7 +20,7 @@ void _push(stack_t **stack, unsigned int line_number)
 		error_exit(stack);
 	}
 
-	arg = strtok(NULL, "\n");
+	arg = strtok(NULL, "\n ");
 	if (isnumber(arg) == 1 && arg != NULL)
 	{
 		push_arg = atoi(arg);
